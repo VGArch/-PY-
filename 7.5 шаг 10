@@ -1,0 +1,10 @@
+number = input()
+is_non_decreasing = True
+for i in range(len(number) - 1):
+    if number[-(i + 1)] > number[-(i + 2)]:
+        is_non_decreasing = False
+        break
+if is_non_decreasing:
+    print("YES")
+else:
+    print("NO")

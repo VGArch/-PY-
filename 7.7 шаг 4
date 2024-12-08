@@ -1,0 +1,15 @@
+sum_negatives = 0
+max_negative = None
+has_negatives = False
+for i in range(10):
+    number = int(input())
+    if number < 0:
+        sum_negatives += number
+        if max_negative is None or number > max_negative:
+            max_negative = number
+        has_negatives = True
+if not has_negatives:
+    print("NO")
+else:
+    print(sum_negatives)
+    print(max_negative)

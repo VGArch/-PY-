@@ -1,0 +1,14 @@
+n = int(input().strip())
+books = [input().strip() for _ in range(n)]
+is_sorted = True
+for i in range(1, n):
+    prev_author, prev_title = books[i - 1].rsplit(',', 1)
+    curr_author, curr_title = books[i].rsplit(',', 1)
+    prev_author = prev_author.strip().split()[0]
+    curr_author = curr_author.strip().split()[0]
+    prev_title = prev_title.strip().strip('«»')
+    curr_title = curr_title.strip().strip('«»')
+    if (prev_author > curr_author) or (prev_author == curr_author and prev_title > curr_title):
+        is_sorted = False
+        break
+print("YES" if is_sorted else "NO")

@@ -1,0 +1,10 @@
+a = int(input())
+b = int(input())
+c = int(input())
+f1 = a + b > c
+f2 = a + c > b
+f3 = b + c > a
+if f1 and f2 and f3:    
+    print('YES')
+else:
+    print('NO')

@@ -1,0 +1,19 @@
+from math import *
+a=float(input())
+b=float(input())
+c=float(input())
+D=(b**2)-(4*a*c)
+n1=(D**0.5)
+f1=((-b-n1)/(2*a))
+f2=((-b+n1)/(2*a))
+f3=-b/(2*a)
+if D>0 and f2>f1:
+    print(f1)
+    print(f2)
+elif D>0 and f1>f2:
+    print(f2)
+    print(f1)
+elif D==0:
+    print(f3)
+else:
+    print('Нет корней')

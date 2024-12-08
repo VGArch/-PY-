@@ -1,0 +1,11 @@
+day = int(input())
+current_weight = float(input())
+initial_weight = 100.0
+target_weight = 88.0
+total_days = 60
+target_weight_today = initial_weight - (initial_weight - target_weight) / total_days * day
+if current_weight <= target_weight_today:
+    print("Все идет по плану")
+else:
+    print("Что-то пошло не так")
+print(f"#{day} ДЕНЬ: ТЕКУЩИЙ ВЕС = {current_weight} кг, ЦЕЛЬ по ВЕСУ = {target_weight_today:.1f} кг")

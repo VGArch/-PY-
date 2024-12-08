@@ -1,0 +1,11 @@
+n = int(input())
+m = int(input())
+k=(-1)
+if n<m:
+    for i in range(n, m+1):
+        print(i)
+elif n>m:
+    for i in range(n, m-1, k):
+        print(i)
+else:
+    print(n)

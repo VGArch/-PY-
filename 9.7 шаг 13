@@ -1,0 +1,12 @@
+import re
+
+def decode_russian_text(text):
+    def replace_unicode(match):
+        unicode_number = int(match.group(1))
+        return chr(unicode_number)
+    pattern = r'\[u-(\d+)\]'
+    decoded_text = re.sub(pattern, replace_unicode, text)
+    return decoded_text
+input_text = input()
+output_text = decode_russian_text(input_text)
+print(output_text)

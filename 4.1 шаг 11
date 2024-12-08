@@ -1,0 +1,15 @@
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+minimun = None
+
+if a <= b and a <= c and a <= d:
+    minimun = int(a)
+elif b <= a and b <= c and b <= d:
+    minimun = int(b)
+elif c <= a and c <= b and c <= d:
+    minimun = int(c)
+elif d <= a and d <= b and d <= c:
+    minimun = int(d)
+print(minimun)

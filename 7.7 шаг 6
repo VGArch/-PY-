@@ -1,0 +1,10 @@
+number = input()
+max_digit = None
+for digit in number:
+    if int(digit) % 3 == 0:
+        if max_digit is None or int(digit) > max_digit:
+            max_digit = int(digit)
+if max_digit is None:
+    print("NO")
+else:
+    print(max_digit)

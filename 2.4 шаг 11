@@ -1,0 +1,6 @@
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+sum=3*(a+b+c+d)
+print(sum)

@@ -1,0 +1,7 @@
+import re
+car_number = input().strip()
+pattern = r'^[АВЕКМНОРСТУХ]\d{3}[АВЕКМНОРСТУХ]{2}_\d{2,3}$'
+if re.match(pattern, car_number):
+    print("YES")
+else:
+    print("NO")

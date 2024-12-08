@@ -1,0 +1,8 @@
+a=int(input())
+b=int(input())
+c=int(input())
+n1=max(a, b , c)
+n2=min(a, b , c)
+print(n1)
+print((a+b+c)-(n1 + n2))
+print(n2)

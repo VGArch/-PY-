@@ -1,0 +1,8 @@
+vertical1 = int(input())
+horizontal1 = int(input())
+vertical2 = int(input())
+horizontal2 = int(input())
+if (vertical1 == vertical2) or (horizontal1 == horizontal2):    
+    print('YES')
+else:
+    print('NO')

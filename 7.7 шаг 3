@@ -1,0 +1,14 @@
+count = 0
+product = 1
+has_non_negative = False
+for i in range(10):
+    number = int(input())
+    if number >= 0:
+        count += 1
+        product *= number
+        has_non_negative = True
+if not has_non_negative:
+    print("NO")
+else:
+    print(count)
+    print(product)

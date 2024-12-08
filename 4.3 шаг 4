@@ -1,0 +1,10 @@
+def draw_triangle():
+    height = 8
+    base_width = 15
+    
+    for i in range(height):
+        stars = 2 * i + 1
+        spaces = (base_width - stars) // 2
+        print(' ' * spaces + '*' * stars)
+
+draw_triangle()
