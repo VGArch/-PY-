@@ -1,0 +1,43 @@
+n = input()
+
+count_3 = 0
+last_digit_count = 0
+even_count = 0
+sum_greater_than_5 = 0
+product_greater_than_7 = 1
+count_0_and_5 = 0
+
+last_digit = n[-1]
+
+for digit in n:
+    int_digit = int(digit)
+
+    if digit == '3':
+        count_3 += 1
+
+    if digit == last_digit:
+        last_digit_count += 1
+
+    if int_digit % 2 == 0:
+        even_count += 1
+
+    if int_digit > 5:
+        sum_greater_than_5 += int_digit
+
+    if int_digit > 7:
+        product_greater_than_7 *= int_digit
+
+    if digit == '0' or digit == '5':
+        count_0_and_5 += 1
+
+if product_greater_than_7 == 1 and last_digit != '7':
+    product_greater_than_7 = 1
+elif product_greater_than_7 == 1:
+    product_greater_than_7 = 7
+
+print(count_3)
+print(last_digit_count)
+print(even_count)
+print(sum_greater_than_5)
+print(product_greater_than_7)
+print(count_0_and_5)

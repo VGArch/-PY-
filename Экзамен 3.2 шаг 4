@@ -1,0 +1,6 @@
+n = int(input())
+nn = int(f"{n}{n}")
+nnn = int(f"{n}{n}{n}")
+result = n + nn + nnn
+
+print(result)

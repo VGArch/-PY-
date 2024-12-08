@@ -1,0 +1,9 @@
+import math
+n = int(input())
+if n == 1:
+    attempts = 1
+else:
+    attempts = math.floor(math.log2(n)) + 1
+print(attempts)
+
+

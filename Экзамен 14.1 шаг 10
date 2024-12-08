@@ -1,0 +1,6 @@
+def is_pangram(text):
+    alphabet = set('abcdefghijklmnopqrstuvwxyz')
+    text_letters = set(text.lower())
+    return alphabet <= text_letters
+text = input()
+print(is_pangram(text))

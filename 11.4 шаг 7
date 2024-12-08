@@ -1,0 +1,12 @@
+n = int(input())
+strings = []
+for _ in range(n):
+    strings.append(input())
+k = int(input())
+queries = []
+for _ in range(k):
+    queries.append(input())
+queries_lower = [query.lower() for query in queries]
+for string in strings:
+    if all(query in string.lower() for query in queries_lower):
+        print(string)

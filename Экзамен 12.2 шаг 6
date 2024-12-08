@@ -1,0 +1,4 @@
+input_string = input()
+jargon_words = [word[1:] + word[0] + 'ки' for word in input_string.split()]
+output_string = ' '.join(jargon_words)
+print(output_string)

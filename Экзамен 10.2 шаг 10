@@ -1,0 +1,8 @@
+s = input()
+indexes = [i for i in range(len(s)) if s[i] == 'f']
+if len(indexes) == 0:
+    print(-2)
+elif len(indexes) == 1:
+    print(-1)
+else:
+    print(indexes[1])

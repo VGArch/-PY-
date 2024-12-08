@@ -1,0 +1,15 @@
+import math
+
+def solve(a, b, c):
+    D = b**2 - 4*a*c
+    
+    if D > 0:
+        x1 = (-b - math.sqrt(D)) / (2*a)
+        x2 = (-b + math.sqrt(D)) / (2*a)
+        return sorted((x1, x2))
+    else:
+        x = -b / (2*a)
+        return x, x
+a, b, c = int(input()), int(input()), int(input())
+x1, x2 = solve(a, b, c)
+print(x1, x2)

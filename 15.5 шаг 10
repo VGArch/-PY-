@@ -1,0 +1,21 @@
+def caesar_decipher(text, shift):
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    decrypted_text = ""
+
+    for char in text:
+        if char.isalpha():
+            index = alphabet.index(char.lower())
+            new_index = (index - shift) % len(alphabet)
+            new_char = alphabet[new_index]
+            if char.isupper():
+                new_char = new_char.upper()
+
+            decrypted_text += new_char
+        else:
+            decrypted_text += char
+
+    return decrypted_text
+encrypted_text = "Sgd fqzrr hr zkvzxr fqddmdq nm sgd nsgdq rhcd ne sgd edmbd."
+shift = 1
+decrypted = caesar_decipher(encrypted_text, shift)
+print(decrypted)

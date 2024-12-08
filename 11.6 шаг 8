@@ -1,0 +1,11 @@
+first_line = input().strip()
+n = int(first_line[1:])
+cleaned_lines = []
+for _ in range(n):
+    line = input().rstrip()
+    comment_index = line.find('#')
+    if comment_index != -1:
+        line = line[:comment_index].rstrip()  
+    cleaned_lines.append(line) 
+for cleaned_line in cleaned_lines:
+    print(cleaned_line)

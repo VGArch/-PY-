@@ -1,0 +1,5 @@
+n = int(input())
+lines = [input().strip() for _ in range(n)]
+k = int(input())
+result = ''.join(line[k - 1] for line in lines if len(line) >= k)
+print(result)

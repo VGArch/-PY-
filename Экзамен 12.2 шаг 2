@@ -1,0 +1,6 @@
+line1 = input()
+line2 = input()
+L = list(map(int, line1.split()))
+M = list(map(int, line2.split()))
+result = [L[i] + M[i] for i in range(len(L))]
+print(' '.join(map(str, result)))

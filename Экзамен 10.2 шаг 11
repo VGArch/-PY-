@@ -1,0 +1,9 @@
+s = input()
+first_h = s.find('h')
+last_h = s.rfind('h')
+start = s[:first_h + 1]
+middle = s[first_h + 1:last_h]
+end = s[last_h:]
+middle_reversed = middle[::-1]
+result = start + middle_reversed + end
+print(result)

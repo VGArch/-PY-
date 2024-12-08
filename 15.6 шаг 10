@@ -1,0 +1,7 @@
+number = int(input())
+binary = bin(number)[2:]
+octal = oct(number)[2:]
+hexadecimal = hex(number)[2:].upper()
+print(binary)
+print(octal)
+print(hexadecimal)

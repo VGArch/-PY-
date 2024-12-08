@@ -1,0 +1,5 @@
+numbers_str = input()
+numbers = list(map(int, numbers_str.split()))
+sum_expression = '+'.join(map(str, numbers))
+total_sum = sum(numbers)
+print(f"{sum_expression}={total_sum}")
